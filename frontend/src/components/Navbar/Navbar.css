@@ -6,7 +6,7 @@
 }
 
 .navbar .logo{
-    width: 140px;
+    width: 100px;
 }
 
 
@@ -56,8 +56,8 @@
     position: absolute;
     top: -8px;
     right: -8px;
-    width: 10px;
-    height: 10px;
+    min-width: 10px;
+    min-height: 10px;
     background-color: blue;
     border-radius: 5px;
 }

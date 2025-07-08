@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
         </div>
         <hr />
-        <p className="footer-copyright">Copyright@2025 SlytexSoftwares.co.ke - All Right Reserved </p>
+        <p>&copy; {new Date().getFullYear()} SlyMarket. All rights reserved.</p>
     </div>
   )
 }

@@ -50,15 +50,15 @@ const Cart = () => {
             <hr />
             <div className="cart-total-details">
               <p>Delivery Fee</p>
-              <p>Ksh.{50}</p>
+              <p>Ksh.{getTotalCartAmount()===0?0:50}</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <b>Total</b>
-              <b>Ksh.{getTotalCartAmount()+50}</b>
+              <b>Ksh.{getTotalCartAmount===0?0:getTotalCartAmount()+50}</b>
             </div>
           </div>
-          <button onClick={()=>navigate('/order')}>PROCEED TO PAYMENT</button>
+          <button onClick={()=>navigate('/order')}>PROCEED TO CHECKOUT</button>
         </div>
         <div className="cart-promocode">
           <div>

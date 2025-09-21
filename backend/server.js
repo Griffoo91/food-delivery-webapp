@@ -16,6 +16,7 @@ connectDB();
 
 //api endpoints
 app.use("/api/food", foodRouter);
+app.use("/images", express.static("uploads")); //to access images statically
 
 app.get("/", (req, res) => {
     res.send("API WORKING...");
